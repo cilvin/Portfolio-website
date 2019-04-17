@@ -88,6 +88,8 @@ background-color (light gray): #B0B0B2
   flex-direction: column;
   text-align: center;
   
+  
+  
 }
 
 .page-header {
@@ -141,10 +143,16 @@ background-color (light gray): #B0B0B2
 
 .button-footer {
   display: flex;
-  clear: both;
-  flex-direction: column;
-  text-align: right;
+  bottom: 10px;
+  text-align: left;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 40%;
+  
 }
+
+
 
 
 
