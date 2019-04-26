@@ -137,7 +137,7 @@ background-color (light gray): #B0B0B2
 /* Grid fallback */
 .grid__item {
   display: inline-block;
-  width: 33%;
+  width: auto;
   background-color: var(--seventh-color);
   padding: var(--normal-padding);
   

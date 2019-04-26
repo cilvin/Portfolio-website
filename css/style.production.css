@@ -57,7 +57,10 @@ a:active {
   /*slected link*/
   color: #489c79;
 }
-
+a:focus {
+  /*slected link*/
+  color: #489c79;
+}
 
 .profile {
   max-width: 700px;
@@ -137,7 +140,7 @@ margin-left: 15px;
 /* Grid fallback */
 .grid__item {
 display: inline-block;
-width: 33%;
+width: auto;
 background-color: #D3D3D3;
 padding: 10px;
 
