@@ -5,6 +5,7 @@ Text-color (dark gray): #21222D
 background-color (light gray): #B0B0B2
 
 */
+   
 
 a { 
   color: #357b70;
@@ -56,10 +57,7 @@ a:active {
   /*slected link*/
   color: #489c79;
 }
-a:focus {
-  /*slected link*/
-  color: #489c79;
-}
+
 
 .profile {
   max-width: 700px;
@@ -85,10 +83,24 @@ display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
 text-align: center;
+border-top: 2px solid lightgray;
 
 
 
+ 
 }
+
+.page-footer__item {
+width: 30%;
+}
+
+
+
+
+
+
+
+
 
 .page-header {
 display: -webkit-box;
@@ -126,6 +138,10 @@ margin-left: 15px;
 .grid__item {
 display: inline-block;
 width: 33%;
+background-color: #D3D3D3;
+padding: 10px;
+
+
 }
 /* Styling CSS grid */
 .grid {
@@ -134,12 +150,6 @@ display: grid;
 -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
 grid-template-columns: 1fr 1fr 1fr;
 grid-gap: 20px
-}
-.grid__item {
-background-color: #D3D3D3;
-padding: 10px;
-width: auto;
-
 }
 
 .grid__item:last-child {
@@ -150,25 +160,6 @@ grid-column: 3 / 3;
 grid-row: 1 / 3;
 }
 
-.button-footer {
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-bottom: 10px;
-text-align: left;
--webkit-box-orient: horizontal;
--webkit-box-direction: normal;
-    -ms-flex-direction: row;
-        flex-direction: row;
--webkit-box-align: end;
-    -ms-flex-align: end;
-        align-items: flex-end;
--webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-        justify-content: space-evenly;
-width: 40%;
-
-}
 
 
 
@@ -249,19 +240,21 @@ button:focus,
           box-shadow: 4px 3px 19px 0px;
 }
 
-.button__default:hover,
-.button__secondary:hover {
--webkit-box-shadow:4px 3px 19px 0px
-rgba(0,0,0,0);
-        box-shadow:4px 3px 19px 0px
-rgba(0,0,0,0);
-}
+
 
 .button__default {
 background-color: #16342f;
 color: #e0b354;
 -webkit-box-shadow: 4px 3px 19px 0px;
         box-shadow: 4px 3px 19px 0px;
+}
+
+.button__default:hover,
+.button__secondary:hover {
+-webkit-box-shadow:4px 3px 19px 0px
+rgba(0,0,0,0);
+        box-shadow:4px 3px 19px 0px
+rgba(0,0,0,0);
 }
 .about {
   max-width: 70%;
