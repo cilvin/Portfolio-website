@@ -97,14 +97,6 @@ border-top: 2px solid lightgray;
 width: 30%;
 }
 
-
-
-
-
-
-
-
-
 .page-header {
 display: -webkit-box;
 display: -ms-flexbox;
@@ -119,6 +111,7 @@ border-bottom: 2px solid lightgray;
 -webkit-box-flex: 0;
     -ms-flex: 0 1 200px;
         flex: 0 1 200px;
+font-weight: normal;
 
 }
 
