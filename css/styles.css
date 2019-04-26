@@ -110,7 +110,7 @@ background-color (light gray): #B0B0B2
 
 .page-header__item {
   flex: 0 1 200px;
-  font-weight: normal;
+  font-weight: 400;
 
 }
 
