@@ -103,8 +103,11 @@ display: -ms-flexbox;
 display: flex;
 width: 100%;
 padding: 10px;
-
 border-bottom: 2px solid lightgray;
+}
+
+.page-header__item {
+min-width: 0;
 }
 
 .page-header__item {

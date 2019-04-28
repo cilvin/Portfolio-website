@@ -104,8 +104,11 @@ background-color (light gray): #B0B0B2
   display: flex;
   width: 100%;
   padding: var(--normal-padding);
-
   border-bottom: 2px solid lightgray;
+}
+
+.page-header__item {
+  min-width: 0;
 }
 
 .page-header__item {
