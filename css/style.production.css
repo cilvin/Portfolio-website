@@ -5,7 +5,12 @@ Text-color (dark gray): #21222D
 background-color (light gray): #B0B0B2
 
 */
-   
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+ 
 
 a { 
   color: #357b70;
@@ -65,7 +70,31 @@ a:focus {
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  min-height: 100%;
+  margin-bottom: 120px;
+}
 
+.contact-wrapper {
+  min-height: 100%;
+  margin-bottom: 120px;
+}
+
+.contact-wrapper::after {
+  content: "";
+  display: block;
+}
+
+.page-footer,.contact-wrapper::after {
+  height: 120px;
+}
+
+.profile::after {
+  content:"";
+  display: block;
+}
+
+.page-footer, .profile::after {
+  height: 120px;
 }
 
 .profile__portrait {
@@ -87,9 +116,6 @@ display: flex;
         flex-direction: column;
 text-align: center;
 border-top: 2px solid lightgray;
-
-
-
  
 }
 
