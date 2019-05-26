@@ -84,7 +84,8 @@ background-color (light gray): #B0B0B2
 
   .contact-wrapper {
     min-height: 100%;
-    margin-bottom: 120px;
+    margin-bottom: 10px;
+    padding-left: 30px;
   }
 
   .contact-wrapper::after {
@@ -255,6 +256,31 @@ background-color (light gray): #B0B0B2
   .about__list {
     list-style-type: none;
   }
+
+  .form-flex {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    max-width:  40%;
+    label { 
+      display: block;
+    }
+    
+  }
+
+  textarea {
+    height: 150px;
+    width: 300px;
+  }
+
+  #contact-submit {
+    max-width: 35%;
+  }
+
+  
+
+  
+
 
 #cv {
   color: var(--eigth-color);
