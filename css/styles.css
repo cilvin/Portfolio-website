@@ -262,15 +262,23 @@ background-color (light gray): #B0B0B2
     flex-direction: column;
     height: 30%;
     max-width:  40%;
-    label { 
-      display: block;
-    }
+  
     
+  }
+
+  label {
+    display: block;
   }
 
   textarea {
     height: 150px;
     width: 300px;
+  }
+
+  textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1 );
+    border: 1px solid rgba(81, 203, 238, 1);
+
   }
 
   #contact-submit {

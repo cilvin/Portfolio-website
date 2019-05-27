@@ -79,6 +79,7 @@ a:active, a:focus {
 .contact-wrapper {
   min-height: 100%;
   margin-bottom: 10px;
+  padding-left: 30px;
 }
 
 .contact-wrapper::after {
@@ -268,13 +269,20 @@ button:focus,
   height: 30%;
   max-width: 40%;
 }
-.form-flex label {
+
+label {
   display: block;
 }
 
 textarea {
   height: 150px;
   width: 300px;
+}
+
+textarea:focus {
+  -webkit-box-shadow: 0 0 5px #51cbee;
+  box-shadow: 0 0 5px #51cbee;
+  border: 1px solid #51cbee;
 }
 
 #contact-submit {
