@@ -285,6 +285,11 @@ textarea:focus {
   border: 1px solid #51cbee;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
 #contact-submit {
   max-width: 35%;
 }

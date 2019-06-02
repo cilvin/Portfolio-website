@@ -281,6 +281,11 @@ background-color (light gray): #B0B0B2
 
   }
 
+  .error-message {
+    color: red;
+    font-size: 0.8em;
+  }
+
   #contact-submit {
     max-width: 35%;
   }
