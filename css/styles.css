@@ -21,6 +21,8 @@ background-color (light gray): #B0B0B2
     --eigth-color: #ffffff;
     --ninth-color: #edc655;
     --tenth-color: #f76414;
+    --logo-color: #65B747;
+    --black: #000;
     --primary-font-weight: 700;
     --normal-padding: 10px;
   }
@@ -32,23 +34,44 @@ background-color (light gray): #B0B0B2
    
 
   a { 
-    color: var(--primary-color);
+    color: var(--black);
+    text-decoration: none;
   }
 
   body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 300;
     font-size: 16px;
     line-height: normal;
     color: var(--fourth-color);
-
+    position: relative;
   }
 
+ 
   h1 {
-    font-size: 30px;
-    font-weight: 700;
-
+    font-family: "Cinzel";
+    font-size: 55px;
+    font-weight: 300;
+    position: absolute;
+    top: 145px;
+    left: 305px;
   }
+
+  #SD {
+    font-family: "Cinzel";
+    position: absolute;
+    top: 215px;
+    left: 450px;
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  #checkbtn {
+    position: absolute;
+    top: 290px;
+    left: 500px;
+  }
+  
 
   h2 {
     font-size: 24px;
@@ -62,25 +85,58 @@ background-color (light gray): #B0B0B2
 
   
   
-  a:visited, a:focus {
-    /* visited link */
-    color: var(--fith-color);
-  }
-  a:hover, a:focus {
-    /* No underlining when hovering over a link */
-    text-decoration: none;
-  }
-  a:active, a:focus {
-    /*slected link*/
-    color: var(--sixth-color);
-  }
+  
 
   .profile {
-    max-width: 700px;
+    max-width: 100%;
     margin: 0 auto;
     min-height: 100%;
     margin-bottom: 120px;
+    text-align: center;
+    background: url(file:///C:/Users/cilvi/OneDrive/Desktop/%23Learntocode/Final_Edition_Website/img/Tropical%20Leaves_left.svg), url(file:///C:/Users/cilvi/OneDrive/Desktop/%23Learntocode/Final_Edition_Website/img/Tropical%20Leaves_right.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: 0% 100%, 100% 0%;
   }
+
+  #letter {
+    position: absolute;
+    width: 175px;
+    height: 200px;
+    top: 100px;
+    left: 175px;
+  }
+
+  .aboutme {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutSection {
+    display: flex;
+    background-color: var(--logo-color);
+    width: 100%;
+    length: 100%;
+    justify-content: center;
+    flex-direction: column;
+   
+  }
+
+  .aboutText {
+    text-align: center;
+    
+  }
+
+  .portrait {
+    align-content: center;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 
   .contact-wrapper {
     min-height: 100%;
@@ -107,17 +163,23 @@ background-color (light gray): #B0B0B2
   }
 
   .profile__portrait {
-    float: left;
+    float: none;
     margin-right: 40px;
-    width: 250px;
+    width: 175px;
     height: auto;
     border-radius: 50%;
+    background-color: var(--logo-color);
   }
 
 .page-footer {
   clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   border-top: 2px solid lightgray;
    
@@ -128,10 +190,12 @@ background-color (light gray): #B0B0B2
 }
 
 .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: var(--normal-padding);
-  border-bottom: 2px solid lightgray;
+ 
 }
 
 .page-header__item {
@@ -139,14 +203,24 @@ background-color (light gray): #B0B0B2
 }
 
 .page-header__item {
-  flex: 0 1 200px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
   font-weight: 400;
-
 }
 
 .page-header__item:last-child {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
+}
+
+
+#logoc {
+  height: 55px;
+  width: 65px;
+  margin-left: 25px;
 }
 
 .navigation-list {
@@ -155,7 +229,12 @@ background-color (light gray): #B0B0B2
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 25px;
+  margin-top: 15px;
+  color: var(--black);
+  font-size: 15px;
+  font-family: 'Nanum Gothic';
+  font-weight: 200;
 }
 /* Grid fallback */
 .grid__item {
@@ -168,13 +247,18 @@ background-color (light gray): #B0B0B2
 }
 /* Styling CSS grid */
 .grid {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px
 }
 
 .grid__item:last-child {
+  -ms-grid-column: 3;
   grid-column: 3 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   grid-row: 1 / 3;
 }
 
@@ -185,63 +269,79 @@ background-color (light gray): #B0B0B2
 
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 
-  button,
-  .button {
+.button {
+  font-family: 'Nanum Gothic';
+  text-decoration: none;
+  background-color: var(--eigth-color);
+  color: var(--black);
+  border-radius: 35px;
+  padding: 10px 15px 10px 15px;
+  border: 2.5px solid var(--logo-color);
+  transition: .2s background-color ;
+}
 
-    /* overwrites browser defaults and resets the border */
-    border: none;
-    display: inline-block;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the background color, font color, and text-decoration of the button */
-    background-color: var(--primary-color);
-    color: var(--eigth-color);
-    text-decoration: none;
-    /* adds spacing to the button */
-    padding: var(--normal-padding);
-    border-radius: 3px;
-    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-    border-bottom: 2px solid rgba(0,0,0,0.3);
-    transition: 0.2s opacity;
-    box-shadow: 4px 3px 19px 0px;
-
-  }
+.button:hover,
+.button:focus {
+  color: var(--eigth-color);
+  background-color: var(--logo-color);
+}
 
 
+#workbtn {
+  color: var(--logo-color);
+  
+}
 
-  button:hover,
-  button:focus,
-  .button:hover,
-  .button:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
-  }
+#contactbtn {
+  color: var(--logo-color);
+ 
+}
+
+#homebtn {
+  transition: .2s color;
+}
+
+#homebtn:hover,
+#homebtn:focus {
+  color: var(--logo-color);
+}
+
+#workbtn:hover,
+#workbtn:focus,
+#contactbtn:hover,
+#contactbtn:focus {
+  color: var(--eigth-color);
+}
+  
+
+
 
   .button__secondary {
     background-color: var(--secondary-color);
     color: var(--third-color);
-    box-shadow: 4px 3px 19px 0px;
+    -webkit-box-shadow: 4px 3px 19px 0px;
+            box-shadow: 4px 3px 19px 0px;
   }
 
   
 
 .button__default {
-  background-color: var(--primary-color-darker);
-  color: var(--secondary-color);
-  box-shadow: 4px 3px 19px 0px;
+  
+  color: var(--black);
+  padding: 10px;
+  border-radius: 35px;
+  border-color: var(--logo-color);
+  border-width: 10px; 
 }
 
-.button__default:hover,
-.button__secondary:hover {
-  box-shadow:4px 3px 19px 0px
- rgba(0,0,0,0);
-}
+
+
+
   .about {
     max-width: 70%;
     margin: 0 auto;
@@ -258,8 +358,13 @@ background-color (light gray): #B0B0B2
   }
 
   .form-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 30%;
     max-width:  40%;
   
@@ -276,7 +381,8 @@ background-color (light gray): #B0B0B2
   }
 
   textarea:focus {
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1 );
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1 );
+            box-shadow: 0 0 5px rgba(81, 203, 238, 1 );
     border: 1px solid rgba(81, 203, 238, 1);
 
   }
@@ -301,6 +407,17 @@ background-color (light gray): #B0B0B2
 }
 
 
+@-webkit-keyframes color-change  {
+ from {
+   fill: var(--ninth-color);
+  }
+
+  to {
+    fill: var(--tenth-color);
+  }
+}
+
+
 @keyframes color-change  {
  from {
    fill: var(--ninth-color);
@@ -314,11 +431,16 @@ background-color (light gray): #B0B0B2
 
 
 .cls-29 {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 
@@ -334,12 +456,14 @@ background-color (light gray): #B0B0B2
 
 @media all and (max-width:500px) {
   .grid {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
