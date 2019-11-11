@@ -140,25 +140,92 @@ background-color (light gray): #B0B0B2
   width: 33%;
   background-color: var(--seventh-color);
   padding: var(--normal-padding);
+  border: 2px solid var(--seventh-color);
   
 
 }
 /* Styling CSS grid */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  grid-gap: 20px;
+  height: auto;
 }
 
-.grid__item:last-child {
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
+.grid__item:hover .image {
+  display: none;
+  transition-duration: 1s;
+  
+}
+
+.grid__item:hover .overlay {
+  opacity: .9;
+  
+}
+
+.grid__item:hover::after .overlay {
+  opacity: .9;
+  
+}
+
+.overlay {
+  border-radius: 10px;
+  position: static;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
+  width: 600px;
+  opacity: 0;
+  text-align: center;
+  transition: .5s ease;
+  background-color: #b4b0b0;
+}
+
+#angular {
+  height: 100px;
+  width: 100px;
+}
+
+#vue {
+  height: 100px;
+  width: 100px;
+}
+
+#react {
+  height: 70px;
+  width: 200px;
+  margin-right: 50px;
+}
 }
 
 
+.techList {
+  list-style: none;
+  margin-right: 40px;
+}
 
+.code {
+  
+  margin: 100px;
+}
 
+.website{
 
+  margin: 100px;
+}
+
+.image {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+}
+
+#workitm {
+  text-align: center;
+}
 
 
 * {
@@ -267,7 +334,34 @@ background-color (light gray): #B0B0B2
 
 
 
+@media (max-width:700px) {
+  .overlay {
 
+    height: 500px;
+    width: 400px;
+
+  }
+
+  .image {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width:1200px) {
+  .overlay {
+
+    height: 500px;
+    width: 550px;
+
+  }
+
+  .image {
+
+    width: 550px;
+    height: 400px;
+  }
+  }
 
 
 

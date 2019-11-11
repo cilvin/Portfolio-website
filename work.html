@@ -1,94 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Cilvin Steward</title>
-    <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <meta name="Viewport" content="width=device-width,initial-scale=1">
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <meta name="Viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
     <!--Header including the logo and the main navigation -->
     <header class="page-header">
       <!-- Add Logo here -->
-      <img class="page-header__item" src="img/Logo_1.svg" alt="logo">
+      <img class="page-header__item" src="img/Logo_Cil.svg" alt="logo" />
       <nav class="navigation-list page-header__item">
         <ul role="menubar">
           <li role="presentation">
-            <a href="index.html" class="navigation-list__item navigation-list__item--active" role="menuitem">Home</a>
+            <a
+              href="index.html"
+              class="navigation-list__item navigation-list__item--active"
+              role="menuitem"
+              >Home</a
+            >
           </li>
           <li role="presentation">
-            <a class="navigation-list__item" href="about.html" role="menuitem">About Me</a>
+            <a class="navigation-list__item" href="about.html" role="menuitem"
+              >About Me</a
+            >
           </li>
           <li role="presentation">
-            <a class="navigation-list__item" href="contact.html" role="menuitem">Contact</a>
+            <a class="navigation-list__item" href="contact.html" role="menuitem"
+              >Contact</a
+            >
           </li>
           <li role="presentation">
-            <a class="navigation-list__item" href="work.html" role="menuitem">Work</a>
+            <a class="navigation-list__item" href="work.html" role="menuitem"
+              >Work</a
+            >
           </li>
         </ul>
       </nav>
     </header>
+
     <section>
-      <h1>Work</h1>
+      <div class="workitm">
+        <h1 >Projects</h1>
+      </div>
       <div class="grid">
+        <!--Angular Quiz App-->
         <div class="grid__item">
-          <h2>Mobile Web App</h2>
-          <p>
-            Within this project I was responisble for the frontend.
-          </p>
-          <a href="#">See project on GitHub</a>
+          <img src="img/q-app.png" class="image" />
+          <div class="overlay">
+            <img id="angular" src="img/angular-icon.svg" />
+            <h4>Description:</h4>
+            <p>An angular quiz app that displays two quizes to choose from</p>
+            <h4>Objective:</h4>
+            <p>Create a basic quiz app using Angular and TypeScript</p>
+            <h4>Technologies Used</h4>
+            <ul class="techList">
+              <li>Typescript</li>
+              <li>Angular</li>
+            </ul>
+            <br />
+            <br />
+            <a class="code" href="https://github.com/cilvin/Quizy-App">Code</a>
+            <a class="website" href="https://cilvin.github.io/Quizy-App/welcome"
+              >Website</a
+            >
+          </div>
         </div>
         <div class="grid__item">
-          <h2>Non profit website</h2>
-          <p>
-            Within this project I was responisble for the frontend.
-          </p>
-          <a href="#">See project on GitHub</a>
+          <img src="img/vue_app.png" class="image" />
+          <div class="overlay">
+            <img id="vue" alt="Vue Logo" src="img/Vuesvg.svg" />
+            <h4>Description:</h4>
+            <p>Vue app that lets you enter and keep track of a list of tasks</p>
+            <h4>Objective:</h4>
+            <p>Create an application using Vue.js</p>
+            <h4>Technologies Used</h4>
+            <ul class="techList">
+              <li>Vue.js</li>
+            </ul>
+            <br />
+            <br />
+            <a class="code" href="https://github.com/cilvin/todo">Code</a>
+            <a class="website" href="https://cilvin.github.io/todo/">Website</a>
+          </div>
         </div>
         <div class="grid__item">
-          <h2>Sports App</h2>
-          <p>
-            Within this project I was responisble for the frontend.
-          </p>
-          <a href="#">See project on GitHub</a>
+          <img src="img/poke-app.png" class="image" />
+          <div class="overlay">
+            <img id="jquery" alt="Jquery Logo" src="img/jquery-horizontal.svg" />
+            <h4>Description:</h4>
+            <p>
+              Jquery app that renders a list of pokemon and display data about
+              each pokemon
+            </p>
+            <h4>Objective:</h4>
+            <p>Send and fetch data asynchronously from an external API</p>
+            <h4>Technologies Used</h4>
+            <ul class="techList">
+              <li>Jquery</li>
+              <li>Bootstrap</li>
+            </ul>
+            <br />
+            <br />
+            <a class="code" href="https://github.com/cilvin/poke-jquery-app"
+              >Code</a
+            >
+            <a class="website" href="https://cilvin.github.io/poke-jquery-app/"
+              >Website</a
+            >
+          </div>
         </div>
         <div class="grid__item">
-          <h2>Video game App</h2>
-          <p>
-            Within this project I was responisble for the frontend.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
-        <div class="grid__item">
-          <h2>Mobile Web App</h2>
-          <p>
-            Within this project I was responisble for the frontend.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
-        <div class="grid__item">
-          <h2>Mobile Web App</h2>
-          <p>
-            Within this project I was responisble for the frontend.
-          </p>
-          <a href="#">See project on GitHub</a>
+          <img class="image" src="img/React.png" alt="React Movie App Image"/>
+          <div class="overlay">
+            <img id="react" alt="React Logo" src="img/React_logo.png" />
+            <h4>Description:</h4>
+            <p>
+              React app that allows users to create an account, get movie data, add to a list of favorite movies, and delete account
+            </p>
+            <h4>Objective:</h4>
+            <p>Use MVC architecture to create a movie app</p>
+            <h4>Technologies Used</h4>
+            <ul class="techList">
+              <li>Redux</li>
+              <li>React</li>
+              <li>MongoDB</li>
+              <li>Express</li>
+              <li>Nodejs</li>
+            </ul>
+            <br />
+            <br />
+            <a class="code" href="https://github.com/cilvin/Movie_App"
+              >Code</a
+            >
+            <a class="website" href="https://cilvin.github.io/Movie-App-React/"
+              >Website</a
+            >
+          </div>
         </div>
       </div>
     </section>
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
-        <img src="img/github_icon.svg" alt="github">
-        <img src="img/twitter_icon.svg" alt="Twitter">
-        <img src="img/linkedin_icon.svg" alt="LinkedIn">
+        <img src="img/github_icon.svg" alt="github" />
+        <img src="img/twitter_icon.svg" alt="Twitter" />
+        <img src="img/linkedin_icon.svg" alt="LinkedIn" />
       </div>
     </footer>
 
-  <script src="js/tota11y.min.js"></script>
+    <script src="js/tota11y.min.js"></script>
   </body>
-
-
 </html>
